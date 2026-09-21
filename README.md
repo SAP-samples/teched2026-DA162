@@ -1,48 +1,31 @@
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The REUSE.toml file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the REUSE.toml in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# Session ID - Session Title
+# DA162: Share Data Products with Zero Copies using SAP Business Data Cloud Connect
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2026 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2026 session called [DA162: Share Data Products with Zero Copies using SAP Business Data Cloud Connect.](https://www.sap.com/events/teched/berlin/flow/sap/te26/catalog/page/catalog/session/1785941937485001cDra)
 
 ## Overview
 
-This session introduces attendees to...
+This hands-on workshop is designed for IT administrators and data architects who want to gain practical expertise with SAP Business Data Cloud. Participants will explore how to share data products to Snowflake using BDC Connect, create and publish custom data products, and manage cross-platform data access at scale. By the end, attendees will be equipped to leverage SAP Business Data Cloud to seamlessly bridge SAP data with Snowflake — enabling governed, reusable data products that accelerate analytics across the enterprise.
+
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+- Google Chrome Browser or Microsoft Edge based on the Chromium engine
+- Access to this GitHub repository
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+Be aware that some of the exercises are dependent on each other and should be completed in the sequence provided below.
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 1 - Provision SAP BDC Connect and include Enterprise Snowflake in a SAP BDC Formation](exercises/ex1/README.md)
+- [Exercise 2 - Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog using SAP BDC Connect](exercises/ex2/README.md)
+- [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake (using CoCo Agent)](exercises/ex3/README.md)
+- [Exercise 4 - Create and publish custom derived data product in Enterprise Snowflake](exercises/ex4/README.md)
+- [Exercise 5 - Install custom data product in SAP Datasphere](exercises/ex5/README.md)
+- [Exercise 6 - Catalog Governance Demo](exercises/ex6/README.md)
 
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
@@ -54,5 +37,12 @@ Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
+## Share your feedback
+
+Use your "SAP Events" App to share your thoughts on this session.
+
+
 ## License
-Copyright (20xx-)20xx SAP SE or an SAP affiliate company and <your-project> contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/<your-project>).
+Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-DA162)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-DA162)
