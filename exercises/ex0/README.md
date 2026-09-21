@@ -12,7 +12,6 @@ S/4HANA sales data products are shared from SAP BDC to Snowflake via BDC Connect
 
 
 The exercises are as follows:
-- [Getting Started](exercises/ex0/)
 - [Exercise 1 - Provision SAP BDC Connect and include Enterprise Snowflake in a SAP BDC Formation](exercises/ex1/README.md)
 - [Exercise 2 - Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog using SAP BDC Connect](exercises/ex2/README.md)
 - [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake (using CoCo Agent)](exercises/ex3/README.md)
