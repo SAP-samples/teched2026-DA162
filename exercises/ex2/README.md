@@ -13,17 +13,15 @@ In this exercise, we will learn about how to have consumption-ready SAP Managed 
 - You need to have a SAP BDC Admin role for sharing
 - Following Data Products are already installed and available in the SAP Business Data Cloud catalog:
 
-| # | Data Package | Data Product |
-|---|---|---|
-| 1 | SAP S/4HANA Database and​ Data Management Data | Customer |
-| 2 | SAP S/4HANA Sales Data Products | Billing Document |
-| 3 | SAP S/4HANA Sales Data Products | Sales Order​ |
+| Data Package | Data Product |
+|---|---|
+| SAP Sourcing and Procurement Data Products | PurchaseOrder |
 
 
 #### Guided Tour
 1. Use the clickthrough below to get an impression of sharing data products to Snowflake using SAP BDC Connect. Click the button below to launch the interactive prototype.
 
-[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA261/tree/main/exercises/ex1/bdc-share-to-snowflake-clickthrough.html)
+[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA261/tree/main/exercises/ex2/bdc-share-to-snowflake-clickthrough.html)
 
 
 2. Use the clickthrough below to get an impression of mounting data product tables on Snowflake

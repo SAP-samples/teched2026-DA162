@@ -15,19 +15,19 @@ Some of the activities within the end-to-end use case are one-time activities. H
 <b>Please check the label on the exercise before you begin.</b> 
 
 ## Use case Description
-S/4HANA sales data products are shared from SAP BDC to Snowflake via BDC Connect, enriched using Snowflake's ML.CLASSIFICATION to dynamically segment customers into spend tiers, and published back to the BDC Catalog as a governed, enriched data product ready for downstream consumption in SAP Datasphere. Walk through the end-to-end flow — from zero-copy sharing and ML enrichment to semantic view creation — and see how business users can answer questions like "Which high-value accounts are we at risk of losing?" directly from trusted, context-rich SAP data.
+S/4HANA procurement data products are shared from SAP BDC to Snowflake via BDC Connect, enriched using SQL-based statistical anomaly detection to flag purchase order line items with unusual pricing, and published back to the BDC Catalog as a governed, enriched data product ready for downstream consumption in SAP Datasphere. Walk through the end-to-end flow — from zero-copy sharing and ML enrichment to custom data product creation — and see how procurement teams can answer questions like "Which purchase orders have pricing anomalies that need immediate review?" directly from trusted, context-rich SAP data.
 
 <br>![Use Case](/exercises/ex0/images/useCase.png)
 
 The exercises are as follows:
 - [Exercise 1 - Provision SAP BDC Connect and include Enterprise Snowflake in a SAP BDC Formation](../ex1/README.md)
 - [Exercise 2 - Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog using SAP BDC Connect](../ex2/README.md)
-- [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake (using CoCo Agent)](../ex3/README.md)
-- [Exercise 4 - Create and publish custom derived data product in Enterprise Snowflake](../ex4/README.md)
+- [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake](../ex3/README.md)
+- [Exercise 4 - Create and publish custom derived data product in Enterprise Snowflake using CoCo Agent](../ex4/README.md)
 - [Exercise 5 - Install custom data product in SAP Datasphere](../ex5/README.md)
-- [Exercise 6 - Catalog Governance Demo](../ex6/README.md)
-
+- [Exercise 6 - Catalog Governance Demo](../ex6/README.md) (TODO)
 ## Access to Tenants
 URLs
 Username: ABSBDS2983293
 Password: shared during the session
+(TODO)

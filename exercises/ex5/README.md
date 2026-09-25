@@ -1,42 +1,55 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 5 - READ_ONLY, HANDS-ON: Install custom data product in SAP Datasphere
 
-In this exercise, we will create...
+We will now install the newly created and published data product in SAP Datasphere. This consists of two steps:
 
-## Exercise 2.1 Sub Exercise 1 Description
+- Enable the SAP Datasphere space to receive data products
+- Install the data product in your space
 
-After completing these steps you will have created...
+## Pre-requisites
+- Custom space in SAP Datasphere named after your username
+- Catalog role to install custom data product
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+## READ-ONLY: Enable SAP Datasphere space to receive Data products
+Before installing the Data Product, we need to add the custom space where we want to install our required Data product to the System > Business Data Products tab and select the correct source system. Follow these steps for your custom space(consumption space) where the data product will be installed:
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+1. Navigate to the System menu.
+2. Select the Business Data Products tab.
 
+<br>![addSpaceToBDP](./images/addSpaceToBDP.png)
 
+3. Add the custom space where you intend to install the Data Product.
+4. Ensure that you select the correct source system for accurate integration.
+<br>![confirmSpace](./images/confirmSpace.png)
 
-## Exercise 2.2 Sub Exercise 2 Description
+## HANDS-ON: Install custom data product in your custom space in SAP Datasphere
+In the section, we will install the new custom data product in our own space.
 
-After completing these steps you will have...
+1. Navigate to Catalog > Search
+2. Search for the data product that you have published `<USERNAME>_Purchase Order Anomaly Scores` with your user id. 
+<br>![searchDP](./images/searchDP.png)
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+> [!NOTE]
+> If your own data product is not yet available on the SAP BDC Catalog, we have already prepared and published a data product that can be installed in your own space.
 
-```
+3. Click on Install
+<br>![install](./images/install.png)
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+4. Select space wherein you want to install the data product.
+
+<br>![selectSpace](./images/selectSpace.png)
+
+5. Make sure that the `Data Access` type is set to `Remote Tables`. Once done, click on **Start Import and Deploy**.
+<br>![catalogType](./images/catalogType.png)
+
+6. Once the data product installation is complete, you will receive a notification. 
+<br>![successfulDP](./images/successfulDP.png)
+
+7. In your custom space, you will see the data product remote table created. Create a new graphical view to view the data.
+<br>![tableCreated](./images/tableCreated.png)
+
+8. Drag and drop the table in the graphical view. View the data.
+<br>![viewData](./images/viewData.png)
+
 
 ## Summary
-
-You've now ...
-
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+The custom data product has now been successfully created and installed!

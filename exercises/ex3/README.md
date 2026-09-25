@@ -1,42 +1,17 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 3 - HANDS-ON: Consume SAP-managed Data product in Enterprise Snowflake (Purchase Order Price Anomaly Detection)
 
-In this exercise, we will create...
+In this exercise, we will learn how to run simple ML workflows in Snowflake. Open Snowflake which is included in our SAP BDC Formation. Here is the [Snowflake tenant](TODO).
+In Snowflake, upload the notebook provided as shown in the image below:
 
-## Exercise 2.1 Sub Exercise 1 Description
+<br>![uploadNotebook](./images/uploadNotebook.png)
 
-After completing these steps you will have created...
+In the notebook, when you see a ✍️ icon, please pay attention and perform the requested changes. You will see a ✍️ icon, when you have to create your own schema or persist your own table etc.
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
-
-
-
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+You will perform the rest of the exercise with the instructions provided inside the notebook. Once done, continue to the next exercise in the series.
+The notebook can be found [here](./NB_po_price_anomaly_detection.ipynb).
 
 ## Summary
 
-You've now ...
+You've now created a table with the persisted anomaly detection.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 4 - Create and publish a custom data product using CoCo agent](../ex4/README.md)
