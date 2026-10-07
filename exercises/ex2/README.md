@@ -1,16 +1,15 @@
-# Exercise 2 - READ-ONLY, GUIDED TOUR: Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog
+# Exercise 2 - READ-ONLY, GUIDED TOUR: Install SAP-managed Data products into SAP Snowflake Horizon Catalog
 
 > [!IMPORTANT]
-> This is only a **read-only** exercise, since sharing data products in SAP Business Data Cloud requires ADMIN rights. The purpose is to illustrate the zero-copy data sharing principle, to get easy access to SAP managed and standardized data product economy. There is a product guided tour available below.
+> This is only a **read-only** exercise, since installing data products from SAP Business Data Cloud into the Snowflake horizon catalog is a one-time activity. The purpose is to illustrate the zero-copy data sharing principle, to get easy access to SAP managed and standardized data product economy. There is a product guided tour available below.
 
-This chapter describes the steps how Data Products in SAP Business Data Cloud (SAP BDC) are shared with Enterprise Snowflake using SAP BDC Connect. To include Snowflake in a SAP BDC Formation, SAP BDC Connect must be provisioned as a pre-requisite. We learned about this in the previous exercise.
+This chapter describes the steps how Data Products in SAP Business Data Cloud (SAP BDC) are installed into Enterprise Snowflake using SAP BDC Connect. To include Snowflake in a SAP BDC Formation, SAP BDC Connect must be provisioned as a pre-requisite. We learned about this in the previous exercise.
 
 In this exercise, we will learn about how to have consumption-ready SAP Managed Data products in Snowflake using SAP BDC Connect.
 
 
 #### Prequisites
 - You have an BDC system landscape formation with **SAP S/4HANA Private Cloud Edition**. 
-- You need to have a SAP BDC Admin role for sharing
 - Following Data Products are already installed and available in the SAP Business Data Cloud catalog:
 
 | Data Package | Data Product |
@@ -19,9 +18,9 @@ In this exercise, we will learn about how to have consumption-ready SAP Managed 
 
 
 #### Guided Tour
-1. Use the clickthrough below to get an impression of sharing data products to Snowflake using SAP BDC Connect. Click the button below to launch the interactive prototype.
+1. Use the Clickthrough below to get an impression of Installing data product from SAP BDC Catalog into SAP Snowflake. 
 
-[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA261/tree/main/exercises/ex2/bdc-share-to-snowflake-clickthrough.html)
+[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](./bdc-snowflake-clickthrough.html)
 
 
 2. Use the clickthrough below to get an impression of mounting data product tables on Snowflake
@@ -31,25 +30,51 @@ In this exercise, we will learn about how to have consumption-ready SAP Managed 
 
 
 #### Exercise (READ-ONLY)
-##### Share data products from SAP BDC Catalog to Snowflake catalog
-For the mentioned nine data products, share each of the data products to Snowflake by following the steps below for each of them.
-1. Login to SAP Business Data Cloud Cockpit and click on `Search` to navigate to the Data Catalog.
-<br/>![cockpit](./images/cockpit.png)
+##### Install data products from SAP BDC Catalog into Snowflake catalog: Create Access Request by Analyst role
+For the mentioned data product above, install it to Enterprise Snowflake by following the steps below.
+1. Open **Catalog & Marketplace** > **Search** and search the name of the data product.
+<br/>![searchDP](./images/searchDP.png)
 
-2. In the catalog search view, click the Data Products tab in the filter bar to narrow the results to data products only.
-<br/>![dataProductCatalog](./images/dataProductCatalog.png)
+2. Open the data product to be installed and click on **Add to Cart**.
+<br/>![addToCart](./images/addToCart.png)
 
-3. Search for the data product by name and using the filters.
-<br/>![searchDp](./images/searchDp.png)
+3. Select the target system where you want to install the data product. Click on **Add to Cart**.
+<br/>![addSystem](./images/addSystem.png)
 
-4. View the details of the data product. Then, use **Share** button and add target to share with. 
-<br/>![addTarget](./images/addTarget.png)
+4. Click on the cart and then click **Proceed**.
+<br/>![clickCart](./images/clickCart.png)
 
-5. In this case, our desired target is Snowflake.
-<br/>![addTargetSnfl](./images/addTargetSnfl.png)
+5. Add a comment for the Adminstrator/ Data Steward. Then accept the **Terms and Conditions**. Click on **Send** to create and send the Access request.
+<br/>![createAccessRequest](./images/createAccessRequest.png)
+<br/>![accessRequestSent](./images/accessRequestSent.png)
 
-6. Create the share using the Share button
-<br/>![createShare](./images/createShare.png)
+
+##### Install data products from SAP BDC Catalog into Snowflake catalog: Approve Access Request by Data steward/Administrator role
+1. Administrator/ Data Steward receives a notification for the access request.
+<br/>![notification](./images/notification.png)
+
+2. The access request can be viewed either by clicking on the notification or can be viewed under **Governance > Access Management**
+<br/>![viewRequest](./images/viewRequest.png)
+
+3. The request can be approved or rejected as per policy by the Administration or Data Steward.
+<br/>![approveRequest](./images/approveRequest.png)
+
+4. An approval comment can be added and then click on **Approve**.
+<br/>![commentApprove](./images/commentApprove.png)
+
+> [!IMPORTANT]
+> For non-sensitive, low-fedelity data products, an Administrator or Data Steward could set up an Auto-approval access policy.
+
+##### Install data products from SAP BDC Catalog into SAP Snowflake catalog: Finish Install by Requester
+1. The request recives a notification that the access request has been approved.
+<br/>![notificationModeller](./images/notificationModeller.png)
+
+2. Notification can be viewed or the approval can also be accessed under  **Catalog > Data Product Access**.
+<br/>![dpAccess](./images/dpAccess.png)
+
+3. Click on **Install Data Product** to finish the installation into Snowflake.
+<br/>![install](./images/install.png)
+
 
 ##### Create catalog-linked databases for the zero-copy shared data products in Snowflake
 1. Open Snowflake from the **System Landscape** tab.
@@ -78,5 +103,5 @@ For the mentioned nine data products, share each of the data products to Snowfla
 
 ## Summary
 
-You've now learnt how to share data products to Snowflake and mount data tables. Let us now continue to [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake](../ex3/README.md)
+You've now learnt how to install data products into Snowflake and mount data tables. Let us now continue to [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake](../ex3/README.md)
 
