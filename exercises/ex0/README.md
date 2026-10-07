@@ -21,11 +21,11 @@ S/4HANA procurement data products are shared from SAP BDC to Snowflake via BDC C
 
 The exercises are as follows:
 - [Exercise 1 - Provision SAP BDC Connect and include Enterprise Snowflake in a SAP BDC Formation](../ex1/README.md)
-- [Exercise 2 - Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog using SAP BDC Connect](../ex2/README.md)
+- [Exercise 2 - Install SAP-managed Data products from SAP BDC Catalog into Snowflake Horizon Catalog using SAP BDC Connect](../ex2/README.md)
 - [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake](../ex3/README.md)
 - [Exercise 4 - Create and publish custom derived data product in Enterprise Snowflake using CoCo Agent](../ex4/README.md)
 - [Exercise 5 - Install custom data product in SAP Datasphere](../ex5/README.md)
-- [Exercise 6 - Catalog Governance Demo](../ex6/README.md) (TODO)
+
 ## Access to Tenants
 URLs
 Username: ABSBDS2983293

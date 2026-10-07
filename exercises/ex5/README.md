@@ -1,55 +1,51 @@
-# Exercise 5 - READ_ONLY, HANDS-ON: Install custom data product in SAP Datasphere
+# Exercise 5 - READ-ONLY, HANDS-ON: Install custom data product in SAP Datasphere
 
-We will now install the newly created and published data product in SAP Datasphere. This consists of two steps:
+We will now install the newly created and published data product in SAP Datasphere. 
+The installation process is governed by Data product data governance. This is a new capability that will be available in SAP Business Data Cloud (SAP BDC) on wave 2026.20, released in September 2026. This new capability introduces a structured, auditable process for controlling access to data products across your organization. Rather than relying on direct permissions and manual sharing, governance shifts access management to a request-based model — one where requests are tracked, reviewed, and recorded as access agreements. to learn more about the process, you can visit this great [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/data-product-data-governance-in-sap-business-data-cloud/ba-p/14470556).
 
-- Enable the SAP Datasphere space to receive data products
-- Install the data product in your space
+## READ-ONLY: Setting up governance for this data product
+For this exercise, let us proceed to install the data product that has been prepared beforehand. 
+In the Governance tab, an administrator or steward can set up the rules. For our case, we have already activated auto-approval on this data product. By doing this, anyone who wants to install the data product in SAP Datasphere does not need to wait for approval.
 
-## Pre-requisites
-- Custom space in SAP Datasphere named after your username
-- Catalog role to install custom data product
+An administrator or data steward navigates to SAP BDC Cockpit > Governance > Data Product Management. Search for the data product and then, turn the flag **Auto-Approval** on.
+<br>![autoApproval](./images/autoApproval.png)
 
-## READ-ONLY: Enable SAP Datasphere space to receive Data products
-Before installing the Data Product, we need to add the custom space where we want to install our required Data product to the System > Business Data Products tab and select the correct source system. Follow these steps for your custom space(consumption space) where the data product will be installed:
 
-1. Navigate to the System menu.
-2. Select the Business Data Products tab.
+Without auto-approval enabled, the steward must manually approve each data product installation request — a workflow suited for sensitive data products or those requiring compliance oversight.
 
-<br>![addSpaceToBDP](./images/addSpaceToBDP.png)
+## HANDS-ON: Install Data Product in SAP Datasphere
+### Access Request creation and approval
+1. Navigate to SAP Datasphere.
+2. Open **Catalog & Marketplace** and search for the data product `V1 Purchase Order Anomaly Scores`.
+<br>![openCatalog](./images/openCatalog.png)
 
-3. Add the custom space where you intend to install the Data Product.
-4. Ensure that you select the correct source system for accurate integration.
-<br>![confirmSpace](./images/confirmSpace.png)
+3. Click on **Add to Cart**.
+<br>![addToCart](./images/addToCart.png)
 
-## HANDS-ON: Install custom data product in your custom space in SAP Datasphere
-In the section, we will install the new custom data product in our own space.
+4. Proceed from the cart as shown below.
+<br>![proceed](./images/proceed.png)
 
-1. Navigate to Catalog > Search
-2. Search for the data product that you have published `<USERNAME>_Purchase Order Anomaly Scores` with your user id. 
-<br>![searchDP](./images/searchDP.png)
+5. Add the space name and comments. Check the Terms and Conditions checkbox after reading it. For this data product, there are no terms and conditions set up in the governance process. Then click **Send**.
+<br>![send](./images/send.png)
 
+6. The Access Request gets auto-approved.
+<br>![auto](./images/autoApproved.png)
+
+### Data Product Access
+1. Navigate to **Catalog & Marketplace**. Open **Data Product Access**.
+2. Navigate to the Data product in question and click on **Install Data Product**.
+<br>![access](./images/access.png)
+
+3. Select the Access Type as **Federation**. 
 > [!NOTE]
-> If your own data product is not yet available on the SAP BDC Catalog, we have already prepared and published a data product that can be installed in your own space.
+> **DO NOT use Replication** for this data product. Select on Federation as the data product access type.
+<br>![federation](./images/federation.png)
 
-3. Click on Install
+4. Click **Install**.
 <br>![install](./images/install.png)
 
-4. Select space wherein you want to install the data product.
-
-<br>![selectSpace](./images/selectSpace.png)
-
-5. Make sure that the `Data Access` type is set to `Remote Tables`. Once done, click on **Start Import and Deploy**.
-<br>![catalogType](./images/catalogType.png)
-
-6. Once the data product installation is complete, you will receive a notification. 
-<br>![successfulDP](./images/successfulDP.png)
-
-7. In your custom space, you will see the data product remote table created. Create a new graphical view to view the data.
-<br>![tableCreated](./images/tableCreated.png)
-
-8. Drag and drop the table in the graphical view. View the data.
-<br>![viewData](./images/viewData.png)
-
+5. Once the installation is complete, you can view the data product remote tables in your space assigned to you. Open **Data Builder** and navigate to the space assigned to you. You can view that the tables are now shared from the Snowflake ingestion space into your custom space.
+<br>![success](./images/success.png)
 
 ## Summary
 The custom data product has now been successfully created and installed!

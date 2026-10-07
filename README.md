@@ -20,11 +20,10 @@ Be aware that some of the exercises are dependent on each other and should be co
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Provision SAP BDC Connect and include Enterprise Snowflake in a SAP BDC Formation](exercises/ex1/README.md)
-- [Exercise 2 - Share SAP-managed Data products from SAP BDC Catalog to Snowflake Horizon Catalog using SAP BDC Connect](exercises/ex2/README.md)
+- [Exercise 2 - Install SAP-managed Data products from SAP BDC Catalog into Snowflake Horizon Catalog using SAP BDC Connect](exercises/ex2/README.md)
 - [Exercise 3 - Consume SAP-managed Data product in Enterprise Snowflake](exercises/ex3/README.md)
 - [Exercise 4 - Create and publish custom derived data product in Enterprise Snowflake using CoCo Agent](exercises/ex4/README.md)
 - [Exercise 5 - Install custom data product in SAP Datasphere](exercises/ex5/README.md)
-- [Exercise 6 - Catalog Governance Demo](exercises/ex6/README.md) (TODO)
 
 
 ## Contributing
