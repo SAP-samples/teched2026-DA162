@@ -9,7 +9,7 @@ In this Hands-on, you will explore a SAP BDC use case where you learn how to sha
 Some of the activities within the end-to-end use case are one-time activities. Hence, this session is a combination of Product tours, reading material and Hands-on. You will use the following labels throughout the exercises to categorize them:</br>
 
 <b>Read-only:</b> Content tagged as 'Read-only' is reading material for you to better understand certain components and processes.</br>
-<b>Guided Tour:</b> Content tagged as 'Guided-tour' are pre-defined clickthroughs designed in an environment mimicing the product truth. These clickthroughs will guide you through the real process to get a better understanding of one-time but essential configuration activities and features.</br>
+<b>Guided Tour:</b> Content tagged as 'Guided-tour' are pre-defined clickthroughs designed in an environment mimicking the product truth. These clickthroughs will guide you through the real process to get a better understanding of one-time but essential configuration activities and features.</br>
 <b>Hands-on:</b> Content tagged as 'Hands-on' are steps that you can perform in the tenant provided to you. Some steps in the process flow can be performed by you to gain a full working understanding.</br>
 
 <b>Please check the label on the exercise before you begin.</b> 
