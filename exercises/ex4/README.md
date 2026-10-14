@@ -14,7 +14,7 @@ Here is the prompt, please adjust the your name object names and the name of the
 
 ```
 /manage-zerocopy-sapbdc I have a table in TECHED_DA162.<SCHEMANAME> that I need to publish as a data product back to SAP BDC via the zerocopy connector. The table is:
-<TABLENAME>
+PO_PRICE_ANOMALY_SCORES
 The table is already a ICERBERG VERSION=3 with the following configuration activated:
   ICEBERG_VERSION = 3
   CATALOG = 'SNOWFLAKE'
@@ -26,12 +26,12 @@ Create a notebook that does the following:
 
 Create a share called <SHARENAME> and grant usage on the database/schema plus SELECT on 1 Iceberg table.
 Attach the share to my existing SAP BDC zerocopy connector at BROWNFIELDEU.PUBLIC.SAP_BDC_CONNECT_1789128881086. Wrap it in a BEGIN/EXCEPTION block in case the share is already associated.
-Publish the data product using SYSTEM$SAP_PUBLISH_DATA_PRODUCT with a minimal CSN (version 1.0 interop, 2.0 schema). The data product should be titled "<DATA PRODUCT NAME>" with a description as follows "Enriched purchase order data with ML-driven price anomaly detection. Each record includes composite anomaly scores derived from z-score analysis across net price, order quantity, and order value dimensions. Records are classified as NORMAL, OVERPRICED, or UNDERPRICED with confidence levels ranging from 30 to 100." and a short description as follows "PO price anomaly scores with overpriced and underpriced flags." . Generate the CSN definitions block mapping each table's columns to CDS types (cds.String, cds.Decimal, cds.Timestamp), marking key and notNull fields appropriately. 
+Publish the data product using SYSTEM$SAP_PUBLISH_DATA_PRODUCT with a minimal CSN (version 1.0 interop, 2.0 schema). Generate the CSN definitions block mapping each table's columns to CDS types (cds.String, cds.Decimal, cds.Timestamp), marking key and notNull fields appropriately. 
 "title": "<USERNAME> Purchase Order Anomaly Scores",
 "shortDescription": "PO price anomaly scores with overpriced and underpriced flags.",
 "description": "Enriched purchase order data with ML-driven price anomaly detection. Each record includes composite anomaly scores derived from z-score analysis across net price, order quantity, and order value dimensions. Records are classified as NORMAL, OVERPRICED, or UNDERPRICED with confidence levels ranging from 30 to 100."
 
-Use warehouse SYSTEM$STREAMLIT_NOTEBOOK_WH.
+Use warehouse SYSTEM$STREAMLIT_NOTEBOOK_WH. Grant all the privileges to the share that are required.
 
 ```
 
