@@ -47,5 +47,7 @@ Without auto-approval enabled, the steward must manually approve each data produ
 5. Once the installation is complete, you can view the data product remote tables in your space assigned to you. Open **Data Builder** and navigate to the space assigned to you. You can view that the tables are now shared from the Snowflake ingestion space into your custom space.
 <br>![success](./images/success.png)
 
+6. Optional: To view the data, create a Graphical view with the table in your custom space.
+
 ## Summary
 The custom data product has now been successfully created and installed!
