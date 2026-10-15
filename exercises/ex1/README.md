@@ -17,7 +17,7 @@
 - You need to have the role ACCOUNTADMIN or need to have the proper roles and privileges in Snowflake to create the connector.
 
 #### Guided Tour
-Use the clickthrough below to get an impression of provisioning SAP® BDC Connect for Snowflake and adding Snowflake into an SAP BDC Formation. Click the button below to launch the interactive prototype.
+Use the clickthrough below to get an impression of provisioning SAP® BDC Connect for Snowflake and adding Snowflake into an SAP BDC Formation. Click the button below to launch the interactive prototype. <br/>
 <a href="https://bdc-workshop.cfapps.eu01.hana.ondemand.com/snowflake_bdc_connect_clickthrough.html" target="_blank">
   <img src="https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge" alt="Open Clickthrough">
 </a>
