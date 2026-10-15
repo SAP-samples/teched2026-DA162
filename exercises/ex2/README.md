@@ -20,7 +20,7 @@ In this exercise, we will learn about how to have consumption-ready SAP Managed 
 #### Guided Tour
 1. Use the Clickthrough below to get an impression of Installing data product from SAP BDC Catalog into SAP Snowflake. 
 
-[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](./bdc-snowflake-clickthrough.html)
+[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://bdc-workshop.cfapps.eu01.hana.ondemand.com/bdc-snowflake-clickthrough.html)
 
 
 2. Use the clickthrough below to get an impression of mounting data product tables on Snowflake
@@ -33,7 +33,7 @@ In this exercise, we will learn about how to have consumption-ready SAP Managed 
 ##### Install data products from SAP BDC Catalog into Snowflake catalog: Create Access Request by Analyst role
 For the mentioned data product above, install it to Enterprise Snowflake by following the steps below.
 1. Open **Catalog & Marketplace** > **Search** and search the name of the data product.
-<br/>![searchDP](./images/searchDP.png)
+<br/>![searchDP](./images/searchDp.png)
 
 2. Open the data product to be installed and click on **Add to Cart**.
 <br/>![addToCart](./images/addToCart.png)

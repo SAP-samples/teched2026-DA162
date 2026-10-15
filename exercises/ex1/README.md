@@ -3,6 +3,11 @@
 > [!IMPORTANT]
 > This is only a **read-only** exercise, since sharing provisioning SAP BDC Connect in SAP Business Data Cloud requires ADMIN rights. The purpose is to illustrate how to include Enterprise Snowflake into an SAP BDC Formation using the SAP BDC Connect component. There is a product guided tour available below. The Read-only part of the blog is based on a SAP Community Blog which can be found [here](https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-sap-bdc-connect-for-snowflake/ba-p/14481139)
 
+## Terminology Used
+- Snowflake: For this exercise, we will use the Enterprise Version of Snowflake brought into an SAP BDC Formation using the component SAP® BDC Connect for Snowflake.
+- SAP Snowflake: Not relevant for the exercise. SAP Snowflake is an SAP Business Data Cloud extension that provides fully managed, comprehensive data and AI capabilities—giving customers greater choice and flexibility while simplifying their data landscape. The Connect component is implicit in this case
+- SAP® BDC Connect for Snowflake: A component offered in SAP BDC for integrating existing Snowflake into SAP BDC for sharing data products in a secure and zero-copy fashion
+- Horizon Catalog: Built on Apache Polaris, this is the catalog that is used on Snowflake for discovery and governance.
 
 ## Pre-requisites
 - Access to SAP for Me (me.sap.com) with the appropriate authorizations.
@@ -14,7 +19,7 @@
 #### Guided Tour
 Use the clickthrough below to get an impression of provisioning SAP® BDC Connect for Snowflake and adding Snowflake into an SAP BDC Formation. Click the button below to launch the interactive prototype.
 
-[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA162/tree/main/exercises/ex1/snowflake_bdc_connect_clickthrough.html)
+[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://bdc-workshop.cfapps.eu01.hana.ondemand.com/snowflake_bdc_connect_clickthrough.html)
 
 ## Provisioning Guide (READ-ONLY)
 
