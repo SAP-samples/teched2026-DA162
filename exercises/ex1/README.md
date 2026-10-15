@@ -14,7 +14,7 @@
 #### Guided Tour
 Use the clickthrough below to get an impression of provisioning SAP® BDC Connect for Snowflake and adding Snowflake into an SAP BDC Formation. Click the button below to launch the interactive prototype.
 
-[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA261/tree/main/exercises/ex1/snowflake_bdc_connect_clickthrough.html)
+[![Open Clickthrough](https://img.shields.io/badge/▶-Open%20Interactive%20Clickthrough-blue?style=for-the-badge)](https://www.github.com/SAP-samples/teched2026-DA162/tree/main/exercises/ex1/snowflake_bdc_connect_clickthrough.html)
 
 ## Provisioning Guide (READ-ONLY)
 
