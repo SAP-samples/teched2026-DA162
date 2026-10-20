@@ -1,16 +1,18 @@
 # Exercise 4- HANDS-ON: Create and publish custom derived data product in Enterprise Snowflake using CoCo Agent
 
+Snowflake CoCo Agent (Cortex Code) is Snowflake’s native AI-powered coding and data agent built to automate data engineering, analytics, and software workflows directly inside Snowflake.
+
 We will use the CoCo agent for the creation of the data product to be published on the SAP BDC Catalog. In Snowflake, you can access CoCo as shown below. You can create a data product using prompts.
 
 <br>![access CoCo](./images/accessCoco.png)
 
-For Snowflake, we have out-of-the-box Cortex Code skills included to package and publish a custom data product. To create a data product to publish to BDC, use `/manage-zerocopy-sapbdc`. The full documentation can be found [here](https://docs.snowflake.com/en/user-guide/data-integration/zero-copy/sap-sql/publish-data)
+For Snowflake, Cortex Code skill `/manage-zerocopy-sapbdc` through the CoCo agent is the official way to publish data products to the SAP BDC Catalog. In the Snowflake tenant providedm, we have already installed the skill to package and publish a custom data product. To create a data product to publish to BDC, use `/manage-zerocopy-sapbdc`. The full documentation can be found [here](https://docs.snowflake.com/en/user-guide/data-integration/zero-copy/sap-sql/publish-data)
 
 Here is the prompt, please adjust the your name object names and the name of the data product that you want to publish:
-<SCHEMA>: SCHEMA_<YOUR USERNAME>
-<TABLENAME>: PO_PRICE_ANOMALY_SCORES
-<SHARENAME> : TECHED_SHARE_<YOUR USERNAME>
-<DATA PRODUCT NAME>: YOUR_USERNAME Purchase Order Anomaly Scores
+`<SCHEMA>`: `<YOUR USERNAME>`
+`<TABLENAME>`: `PO_PRICE_ANOMALY_SCORES`
+`<SHARENAME>` : `TECHED_SHARE_<YOUR USERNAME>`
+`<DATA PRODUCT NAME>`: YOUR_USERNAME Purchase Order Anomaly Scores
 
 ```
 /manage-zerocopy-sapbdc I have a table in TECHED_DA162.<SCHEMANAME> that I need to publish as a data product back to SAP BDC via the zerocopy connector. The table is:

@@ -39,8 +39,6 @@ Support for the content in this repository is available during the actual time o
 ## Share your feedback
 
 Use your "SAP Events" App to share your thoughts on this session.
-(TODO)
-
 
 ## License
 Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
