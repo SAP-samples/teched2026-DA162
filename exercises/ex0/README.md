@@ -32,5 +32,3 @@ The exercises are as follows:
 - [SAP Datasphere](https://trial-bdc-datasphere-3.eu10.hcs.cloud.sap/)
 - [Snowflake](https://6d0992e5-7283-4685-a3c8-4c4f7289eb0a.sharing.hdl.prod-eu10.hanacloud.ondemand.com/)
 
-Username: TAXXXXXXXXXXXX
-Password: shared during the session
