@@ -1,5 +1,7 @@
 # DA162: Share Data Products with Zero Copies using SAP Business Data Cloud Connect
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-DA162)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-DA162)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2026 session called [DA162: Share Data Products with Zero Copies using SAP Business Data Cloud Connect.](https://www.sap.com/events/teched/berlin/flow/sap/te26/catalog/page/catalog/session/1785941937485001cDra)
