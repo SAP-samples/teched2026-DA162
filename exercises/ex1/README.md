@@ -10,13 +10,17 @@
 - Horizon Catalog: Built on Apache Polaris, this is the catalog that is used on Snowflake for discovery and governance.
 
 ## Pre-requisites
-- Access to SAP for Me (me.sap.com) with the appropriate authorizations.
+- Access to SAP for Me  with the appropriate authorizations.
 - SAP Business Data Cloud Core must be enabled.
 - Sufficient remaining capacity units in your contract to allocate to the new solution.
 - The Snowflake account must be Standard, Enterprise, or Business Critical edition. You should be ORGADMIN to accept the SAP® BDC Connect for Snowflake Terms or the ORGADMIN must accept the terms before to star the provisioning process.
 - You need to have the role ACCOUNTADMIN or need to have the proper roles and privileges in Snowflake to create the connector.
 
 #### Guided Tour
+
+> [!IMPORTANT]
+> Use the guided clickthrough to get a feel of the exercises marked "GUIDED TOUR".
+
 Use the clickthrough below to get an impression of provisioning SAP® BDC Connect for Snowflake and adding Snowflake into an SAP BDC Formation. Click the button below to launch the interactive prototype. <br/>
 > Tip: Right-click → Open in new tab for the best experience.
 
@@ -25,6 +29,8 @@ Use the clickthrough below to get an impression of provisioning SAP® BDC Connec
 </a>
 
 ## Provisioning Guide (READ-ONLY)
+> [!IMPORTANT]
+> This session is read-only. Please do not perform it Hands-on.
 
 1. Log in to SAP for Me and navigate to Portfolio & Products > Business Data Cloud. On the Applications tab you will find SAP Business Data Cloud Connect. Click on "Start Provisioning".
 <br/>![addTarget](./images/startProv.png)
